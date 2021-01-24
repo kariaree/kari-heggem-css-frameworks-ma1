@@ -1,0 +1,25 @@
+.footer {
+    background: $color-primary;
+    flex-shrink: 0;
+    padding: 1rem;
+
+
+    &__container {
+        @extend .container;
+        display: flex;
+        flex-direction: row;
+        font-size: 0.8rem; 
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__copyright {
+        margin-bottom: 0;
+    }
+
+    &__email:hover {
+        color: $color-secondary-font;
+        text-decoration: none;
+    }
+
+}

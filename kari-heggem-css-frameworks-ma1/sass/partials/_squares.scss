@@ -1,0 +1,32 @@
+.squares { 
+justify-content: space-between;
+
+    &__item {
+        height: 263px;
+        max-width: 95%;
+        border-radius: 15px;
+        border: none;
+        background: $color-primary;
+        margin-bottom: 2rem;
+
+        @media (max-width: $table-width) {
+            height: 355px;
+            width: 357px;
+            margin: 0 auto 2rem;
+        }
+
+        &--white {
+            @extend .squares__item;
+            border: 2px solid $color-accent;
+            background: white;
+        }
+
+        &--pink {
+            @extend .squares__item;
+            border: 2px solid white;
+            background: $color-accent;
+        }
+    }
+
+
+}
